@@ -32,7 +32,7 @@ const Homepage = () => {
 
     if (loading) {
         return (
-            <div className="d-flex justify-content-center loadingsymbol">
+            <div class="d-flex justify-content-center loadingsymbol">
                 <div className="spinner-border blue" role="status">
                     <span className="visually-hidden">Loading...</span>
                 </div>
@@ -101,7 +101,10 @@ const Homepage = () => {
                     paginate={paginate}
                     className='pt-3'
                 />
+
             </div>
+
+           
         </div>
     )
 }
