@@ -62,10 +62,6 @@ const Homepage = () => {
         <div>
             <div className="container pt-5">
                 <h3 className='pt-2 fs-4 d-flex justify-content-center'>Frontend Developer Coding Challenge</h3>
-               
-                {/* {console.log(coindata)}
-                {console.log(coindata.length)}
-                {console.log(coindata[0])} */}
 
                 <form className='pt-3'>
                     <input 
@@ -103,8 +99,6 @@ const Homepage = () => {
                 />
 
             </div>
-
-           
         </div>
     )
 }

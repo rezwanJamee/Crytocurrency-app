@@ -15,12 +15,15 @@ function App() {
       {/* Page Routes*/}
       <div className='app-body'>
         <Switch>
-          <Route exact path="/trending">
-            <Trendingpage />
-          </Route>
+          
           <Route exact path="/coindetails/:name">
             <Coindetails />
           </Route>
+          
+          <Route exact path="/trending/">
+            <Trendingpage />
+          </Route>
+
           <Route path="/">
             <Homepage />
           </Route>

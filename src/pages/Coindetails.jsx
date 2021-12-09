@@ -47,9 +47,7 @@ const Coindetails = () => {
     }
 
     return (
-        <div>
-
-        
+        <div>      
             <div className="container pt-5">
                 <div className=''>
                     <img src={coinDetails?.image?.small} alt='' />
@@ -58,14 +56,7 @@ const Coindetails = () => {
                 </div>
             
             <Link className='textlink' to="/"><IoArrowBack/> Go home</Link>
-            
-            {/* <p>Coin details here...</p>
-            {console.log(coinDetails)}
-            {coinURL + name }
-
-            <p>Fetched data: {coinDetails.name}</p> */}
-
-            
+                        
             <div className="row pt-3">
                 <div className="col-6">
                     <p><GiWorld size={30} className='intext-icons'/>
@@ -102,29 +93,6 @@ const Coindetails = () => {
             <p className='text-justify'> { (coinDetails?.description?.en ) ? 
             ( coinDetails?.description?.en ) : "No description found."  }</p>
             <hr/>
-
-            
-
-            {/* <p className='pt-3'>Description: { coinDetails?.description?.en  }</p> */}
-            {/* <p>Category: {coinDetails.categories}</p>
-
-            <p>Facebook Community: { (coinDetails?.community_data?.facebook_likes) ? (coinDetails?.community_data?.facebook_likes) : "null"  }</p>
-            <p>Twitter Follower: { (coinDetails?.community_data?.twitter_followers) ? (coinDetails?.community_data?.twitter_followers) : "null"  }</p>
-            <p>Reddit Subscribers: { (coinDetails?.community_data?.reddit_subscribers) ? (coinDetails?.community_data?.reddit_subscribers) : "null"  }</p>
-
-            <p>Website: { (coinDetails?.links?.homepage ) ? ( <a href={coinDetails?.links?.homepage}> {coinDetails?.links?.homepage} </a>) : "null"  }</p>
-
-            <p>Down votes: { (coinDetails?.sentiment_votes_down_percentage ) ? 
-            ( coinDetails?.sentiment_votes_down_percentage + "%") : "null"  }</p>
-            <p>Up votes: { (coinDetails?.sentiment_votes_up_percentage ) ? 
-            ( coinDetails?.sentiment_votes_up_percentage + "%") : "null"  }</p>
-            
-            <p>Coingecko Rank: { (coinDetails?.coingecko_rank ) ? 
-            ( coinDetails?.coingecko_rank ) : "null"  }</p>
-
-            <p>Market Cap Rank: { (coinDetails?.market_cap_rank ) ? 
-            ( coinDetails?.market_cap_rank ) : "null"  }</p> */}
-
             </div>
         </div>
     )
